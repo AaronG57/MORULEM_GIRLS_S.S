@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Morulem Girls' S.S. | SchoolsUganda</title>
+
+  <meta
+    name="description"
+    content="Morulem Girls' Senior Secondary School in Abim District, Uganda. Government-aided girls' boarding secondary school offering O and A Level education."
+  >
+
+  <meta name="theme-color" content="#075e54">
+
+  <style>
+    :root {
+      --primary: #075e54;
+      --primary-dark: #043f39;
+      --primary-light: #e7f5f2;
+      --accent: #f4b942;
+      --accent-dark: #d99b1f;
+      --text: #17221f;
+      --muted: #65736f;
+      --white: #ffffff;
+      --bg: #f5f8f7;
+      --border: #dce7e4;
+      --success: #16845c;
+      --danger: #b54a4a;
+      --shadow: 0 14px 40px rgba(8, 52, 45, 0.09);
+      --radius: 18px;
+      --max-width: 1180px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 82px;
+    }
+
+    body {
+      font-family:
+        Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin-inline: auto;
+    }
+
+    /* =========================
+       TOP BAR
+    ========================== */
+
+    .topbar {
+      background: var(--primary-dark);
+      color: rgba(255,255,255,0.9);
+      font-size: 0.88rem;
+    }
+
+    .topbar-inner {
+      min-height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .topbar span {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================== */
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-weight: 800;
+      color: var(--primary);
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: linear-gradient(135deg, var(--primary), #0d806f);
+      box-shadow: 0 8px 18px rgba(7,94,84,0.22);
+      font-size: 1.2rem;
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-size: 0.67rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+      list-style: none;
+      font-size: 0.94rem;
+      font-weight: 600;
+    }
+
+    .nav-links a {
+      color: #30413d;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-cta {
+      background: var(--primary);
+      color: white !important;
+      padding: 10px 17px;
+      border-radius: 10px;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--border);
+      background: white;
+      color: var(--primary);
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1.3rem;
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      background:
+        radial-gradient(circle at 90% 10%, rgba(244,185,66,0.22), transparent 28%),
+        radial-gradient(circle at 10% 90%, rgba(7,94,84,0.16), transparent 32%),
+        linear-gradient(135deg, #edf7f4 0%, #ffffff 55%, #f7f1df 100%);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 520px;
+      height: 520px;
+      border-radius: 50%;
+      right: -210px;
+      top: -200px;
+      border: 80px solid rgba(7,94,84,0.045);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      left: -180px;
+      bottom: -180px;
+      border: 55px solid rgba(244,185,66,0.08);
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.18fr 0.82fr;
+      align-items: center;
+      gap: 70px;
+      padding: 90px 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--primary);
+      background: rgba(7,94,84,0.08);
+      border: 1px solid rgba(7,94,84,0.12);
+      border-radius: 999px;
+      padding: 7px 13px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 5.1rem);
+      line-height: 1.02;
+      letter-spacing: -0.055em;
+      max-width: 780px;
+      color: #123b35;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero-description {
+      max-width: 680px;
+      color: #52635e;
+      font-size: 1.09rem;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 48px;
+      padding: 0 20px;
+      border-radius: 11px;
+      border: 1px solid transparent;
+      font-weight: 800;
+      cursor: pointer;
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      color: white;
+      background: var(--primary);
+      box-shadow: 0 10px 24px rgba(7,94,84,0.2);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-secondary {
+      color: var(--primary);
+      background: white;
+      border-color: var(--border);
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.85);
+      border: 1px solid rgba(255,255,255,0.95);
+      border-radius: 26px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    .hero-card-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding-bottom: 21px;
+      margin-bottom: 19px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .school-icon {
+      width: 58px;
+      height: 58px;
+      flex: 0 0 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 17px;
+      background: var(--primary);
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .hero-card h3 {
+      color: var(--primary-dark);
+      line-height: 1.25;
+    }
+
+    .hero-card small {
+      color: var(--muted);
+    }
+
+    .quick-facts {
+      display: grid;
+      gap: 14px;
+    }
+
+    .quick-fact {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      gap: 10px;
+      align-items: start;
+    }
+
+    .quick-fact-icon {
+      color: var(--accent-dark);
+      font-weight: 900;
+      font-size: 1.1rem;
+    }
+
+    .quick-fact strong {
+      display: block;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .quick-fact span {
+      font-weight: 700;
+      color: #29413b;
+    }
+
+    /* =========================
+       SECTION BASICS
+    ========================== */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 42px;
+    }
+
+    .section-heading.center {
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .section-label {
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.11em;
+      font-weight: 900;
+      font-size: 0.75rem;
+      margin-bottom: 9px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: -0.035em;
+      line-height: 1.12;
+      color: #173d36;
+      margin-bottom: 14px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    /* =========================
+       FACTS
+    ========================== */
+
+    .facts-section {
+      background: white;
+    }
+
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .fact-card {
+      padding: 25px;
+      background: #fbfdfc;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    .fact-card .number {
+      font-size: 1.55rem;
+      font-weight: 900;
+      color: var(--primary);
+      line-height: 1.2;
+      margin-bottom: 7px;
+    }
+
+    .fact-card p {
+      color: var(--muted);
+      font-size: 0.87rem;
+    }
+
+    /* =========================
+       ABOUT
+    ========================== */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-copy p {
+      color: #53635f;
+      margin-bottom: 18px;
+    }
+
+    .verification-note {
+      margin-top: 25px;
+      padding: 18px 19px;
+      background: #fffaf0;
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      color: #67552e;
+      font-size: 0.9rem;
+    }
+
+    .identity-card {
+      background: var(--primary);
+      color: white;
+      border-radius: 25px;
+      padding: 33px;
+      box-shadow: 0 18px 45px rgba(7,94,84,0.18);
+    }
+
+    .identity-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 24px;
+    }
+
+    .identity-list {
+      display: grid;
+      gap: 15px;
+    }
+
+    .identity-item {
+      display: grid;
+      grid-template-columns: 135px 1fr;
+      gap: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .identity-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .identity-item span:first-child {
+      color: rgba(255,255,255,0.65);
+      font-size: 0.84rem;
+    }
+
+    .identity-item span:last-child {
+      font-weight: 750;
+    }
+
+    /* =========================
+       ACADEMICS
+    ========================== */
+
+    .academics {
+      background: #eef6f4;
+    }
+
+    .academic-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .academic-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 29px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .academic-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .academic-icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-weight: 900;
+      font-size: 1.25rem;
+      margin-bottom: 19px;
+    }
+
+    .academic-card h3 {
+      color: #1d423b;
+      margin-bottom: 9px;
+    }
+
+    .academic-card p {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    /* =========================
+       CAMPUS / CONDITIONS
+    ========================== */
+
+    .conditions-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .condition-card {
+      border-radius: var(--radius);
+      padding: 28px;
+      border: 1px solid var(--border);
+      background: white;
+    }
+
+    .condition-card.good {
+      border-top: 4px solid var(--success);
+    }
+
+    .condition-card.attention {
+      border-top: 4px solid var(--accent);
+    }
+
+    .condition-card h3 {
+      margin-bottom: 15px;
+      color: #21453e;
+    }
+
+    .condition-card ul {
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .condition-card li {
+      margin-bottom: 8px;
+    }
+
+    .audit-box {
+      margin-top: 25px;
+      padding: 17px 19px;
+      border-radius: 12px;
+      background: #fff7e4;
+      color: #69542c;
+      font-size: 0.89rem;
+    }
+
+    /* =========================
+       COMMUNITY
+    ========================== */
+
+    .community {
+      background: white;
+    }
+
+    .community-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 18px;
+    }
+
+    .community-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      background: #fcfefd;
+    }
+
+    .community-card h3 {
+      margin-bottom: 10px;
+      color: #21453e;
+    }
+
+    .community-card p {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    /* =========================
+       LOCATION
+    ========================== */
+
+    .location-section {
+      background: linear-gradient(135deg, #063f39, #087263);
+      color: white;
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.85fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .location-section .section-label {
+      color: #f5cb69;
+    }
+
+    .location-section h2 {
+      color: white;
+    }
+
+    .location-section .section-heading p {
+      color: rgba(255,255,255,0.72);
+    }
+
+    .location-details {
+      display: grid;
+      gap: 14px;
+      margin: 25px 0;
+    }
+
+    .location-detail {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: rgba(255,255,255,0.87);
+    }
+
+    .location-detail strong {
+      color: white;
+      display: block;
+    }
+
+    .map-card {
+      min-height: 360px;
+      border-radius: 25px;
+      overflow: hidden;
+      background:
+        linear-gradient(rgba(7,94,84,0.86), rgba(4,63,57,0.9)),
+        repeating-linear-gradient(
+          45deg,
+          rgba(255,255,255,0.07) 0,
+          rgba(255,255,255,0.07) 1px,
+          transparent 1px,
+          transparent 22px
+        );
+      border: 1px solid rgba(255,255,255,0.12);
+      display: grid;
+      place-items: center;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .map-inner {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .map-pin {
+      width: 68px;
+      height: 68px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      background: var(--accent);
+      color: #5d430f;
+      font-size: 1.8rem;
+      box-shadow: 0 0 0 14px rgba(244,185,66,0.12);
+    }
+
+    .map-card h3 {
+      margin-bottom: 7px;
+    }
+
+    .map-card p {
+      color: rgba(255,255,255,0.68);
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .map-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      color: var(--primary);
+      padding: 11px 17px;
+      border-radius: 10px;
+      font-weight: 800;
+    }
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+    .contact-section {
+      background: var(--bg);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .contact-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+
+    .contact-card .icon {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    .contact-card h3 {
+      color: #21453e;
+      margin-bottom: 7px;
+    }
+
+    .contact-card p,
+    .contact-card a {
+      color: var(--muted);
+      font-size: 0.91rem;
+    }
+
+    .contact-card a:hover {
+      color: var(--primary);
+    }
+
+    .contact-warning {
+      margin-top: 20px;
+      padding: 15px 17px;
+      background: #fff4e4;
+      border-radius: 10px;
+      color: #765a28;
+      font-size: 0.83rem;
+    }
+
+    /* =========================
+       SOURCES
+    ========================== */
+
+    .sources {
+      background: white;
+    }
+
+    .sources-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      list-style: none;
+    }
+
+    .source-item {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 15px 17px;
+      background: #fbfdfc;
+      color: #53635f;
+      font-size: 0.88rem;
+    }
+
+    .source-item strong {
+      color: var(--primary);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      background: #052f2b;
+      color: rgba(255,255,255,0.7);
+      padding: 35px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-brand {
+      color: white;
+      font-weight: 850;
+    }
+
+    .footer-note {
+      font-size: 0.78rem;
+      max-width: 600px;
+      text-align: right;
+    }
+
+    /* =========================
+       BACK TO TOP
+    ========================== */
+
+    .back-top {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 45px;
+      height: 45px;
+      border: none;
+      border-radius: 12px;
+      background: var(--primary);
+      color: white;
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(12px);
+      transition: 0.25s ease;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+      z-index: 900;
+    }
+
+    .back-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media (max-width: 980px) {
+      .nav-links {
+        position: absolute;
+        left: 4%;
+        right: 4%;
+        top: 70px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 16px;
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 11px 8px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid {
+        padding: 70px 0;
+      }
+
+      .hero-card {
+        max-width: 620px;
+      }
+
+      .facts-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .academic-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .community-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .location-grid {
+        gap: 35px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .topbar-inner {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .topbar-inner span:last-child {
+        display: none;
+      }
+
+      .brand small {
+        display: none;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-grid {
+        padding: 55px 0 65px;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.35rem, 12vw, 3.5rem);
+      }
+
+      .hero-description {
+        font-size: 1rem;
+      }
+
+      .facts-grid,
+      .academic-grid,
+      .conditions-grid,
+      .contact-grid,
+      .sources-list {
+        grid-template-columns: 1fr;
+      }
+
+      .identity-item {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-note {
+        text-align: left;
+      }
+
+      .map-card {
+        min-height: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================================
+       TOP BAR
+  ========================================================== -->
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>🇺🇬 SchoolsUganda · Abim District</span>
+      <span>Verified school information from public records</span>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       NAVIGATION
+  ========================================================== -->
+
+  <header class="navbar">
+    <div class="container nav-inner">
+
+      <a href="#home" class="brand">
+        <div class="brand-mark">S</div>
+        <div>
+          SchoolsUganda
+          <small>Uganda School Directory</small>
+        </div>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#academics">Academics</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =======================================================
+         HERO
+    ======================================================== -->
+
+    <section class="hero" id="home">
+
+      <div class="container hero-grid">
+
+        <div>
+          <div class="eyebrow">
+            ✓ Government-Aided Secondary School
+          </div>
+
+          <h1>
+            Morulem Girls'
+            <span>Senior Secondary School</span>
+          </h1>
+
+          <p class="hero-description">
+            A girls' boarding secondary school serving learners in
+            Morulem, Aremo Parish, Abim District, Uganda. The school
+            is listed in Uganda's government-aided secondary-school
+            system and offers both O-Level and A-Level education.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#about" class="btn btn-primary">
+              Explore School
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+              School Contact
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+
+          <div class="hero-card-header">
+            <div class="school-icon">🎓</div>
+
+            <div>
+              <h3>Morulem Girls' S.S.</h3>
+              <small>Abim District, Uganda</small>
+            </div>
+          </div>
+
+          <div class="quick-facts">
+
+            <div class="quick-fact">
+              <div class="quick-fact-icon">◉</div>
+              <div>
+                <strong>School Type</strong>
+                <span>Girls' Boarding Secondary</span>
+              </div>
+            </div>
+
+            <div class="quick-fact">
+              <div class="quick-fact-icon">◎</div>
+              <div>
+                <strong>Education Level</strong>
+                <span>O-Level &amp; A-Level</span>
+              </div>
+            </div>
+
+            <div class="quick-fact">
+              <div class="quick-fact-icon">#</div>
+              <div>
+                <strong>EMIS Code</strong>
+                <span>188000</span>
+              </div>
+            </div>
+
+            <div class="quick-fact">
+              <div class="quick-fact-icon">⌖</div>
+              <div>
+                <strong>Location</strong>
+                <span>Morulem, Abim District</span>
+              </div>
+            </div>
+
+          </div>
+
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- =======================================================
+         KEY FACTS
+    ======================================================== -->
+
+    <section class="facts-section">
+
+      <div class="container">
+
+        <div class="section-heading center">
+          <div class="section-label">At a glance</div>
+          <h2>School information</h2>
+          <p>
+            Core information confirmed against government and institutional
+            records.
+          </p>
+        </div>
+
+        <div class="facts-grid">
+
+          <div class="fact-card">
+            <div class="number">188000</div>
+            <p>Education Management Information System (EMIS) code</p>
+          </div>
+
+          <div class="fact-card">
+            <div class="number">1002</div>
+            <p>2025 Ministry of Education post-primary placement code</p>
+          </div>
+
+          <div class="fact-card">
+            <div class="number">O &amp; A</div>
+            <p>Officially listed education levels</p>
+          </div>
+
+          <div class="fact-card">
+            <div class="number">Girls</div>
+            <p>Government placement category: girls / boarding</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================
+         ABOUT
+    ======================================================== -->
+
+    <section id="about">
+
+      <div class="container about-grid">
+
+        <div class="about-copy">
+
+          <div class="section-heading">
+            <div class="section-label">About the school</div>
+
+            <h2>A girls' secondary school in Morulem</h2>
+
+            <p>
+              Morulem Girls' Senior Secondary School is a Ugandan
+              secondary school located in Morulem in Abim District.
+              Public education records identify it as a government-aided
+              school under Uganda's Ministry of Education and Sports.
+            </p>
+
+            <p>
+              The Ministry of Education's 2025 Post-Primary Selection
+              Information Guide lists the school as a universal
+              government-aided secondary school, with O-Level and
+              A-Level education and a girls/boarding category.
+            </p>
+
+            <p>
+              The school is also listed by the Diocese of Kotido among
+              its Catholic schools, reflecting the institution's connection
+              with the wider Morulem mission and Catholic education
+              environment.
+            </p>
+
+          </div>
+
+          <div class="verification-note">
+            <strong>Information policy:</strong>
+            This profile intentionally does not publish school fees,
+            a headteacher's name, a school motto, admission dates,
+            subject combinations, or examination-performance claims
+            unless those details can be reliably verified from public
+            records.
+          </div>
+
+        </div>
+
+        <div class="identity-card">
+
+          <h3>Official identity</h3>
+
+          <div class="identity-list">
+
+            <div class="identity-item">
+              <span>Official name</span>
+              <span>Morulem Girls' S.S.</span>
+            </div>
+
+            <div class="identity-item">
+              <span>Common name</span>
+              <span>Morulem Girls' Senior Secondary School</span>
+            </div>
+
+            <div class="identity-item">
+              <span>Ownership</span>
+              <span>Government Aided</span>
+            </div>
+
+            <div class="identity-item">
+              <span>Gender</span>
+              <span>Girls</span>
+            </div>
+
+            <div class="identity-item">
+              <span>Boarding</span>
+              <span>Boarding</span>
+            </div>
+
+            <div class="identity-item">
+              <span>Levels</span>
+              <span>O-Level &amp; A-Level</span>
+            </div>
+
+            <div class="identity-item">
+              <span>EMIS</span>
+              <span>188000</span>
+            </div>
+
+            <div class="identity-item">
+              <span>Placement code</span>
+              <span>1002</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================
+         ACADEMICS
+    ======================================================== -->
+
+    <section class="academics" id="academics">
+
+      <div class="container">
+
+        <div class="section-heading center">
+          <div class="section-label">Academics</div>
+          <h2>Secondary education pathway</h2>
+          <p>
+            The school's official government placement record confirms
+            both Ordinary and Advanced Level education.
+          </p>
+        </div>
+
+        <div class="academic-grid">
+
+          <article class="academic-card">
+            <div class="academic-icon">O</div>
+            <h3>Ordinary Level</h3>
+            <p>
+              The school is listed as an O-Level provider within
+              Uganda's government-aided secondary education system.
+            </p>
+          </article>
+
+          <article class="academic-card">
+            <div class="academic-icon">A</div>
+            <h3>Advanced Level</h3>
+            <p>
+              The 2025 Ministry of Education selection guide lists
+              Morulem Girls' S.S. as offering A-Level education.
+            </p>
+          </article>
+
+          <article class="academic-card">
+            <div class="academic-icon">✓</div>
+            <h3>Government System</h3>
+            <p>
+              The school is registered as a government-aided institution
+              and has EMIS code 188000.
+            </p>
+          </article>
+
+          <article class="academic-card">
+            <div class="academic-icon">🔬</div>
+            <h3>Science &amp; Innovation</h3>
+            <p>
+              In 2025, the school was shortlisted by the Uganda Professional
+              Science Teachers Union for the regional Science Innovation
+              Projects Competition.
+            </p>
+          </article>
+
+          <article class="academic-card">
+            <div class="academic-icon">⚙</div>
+            <h3>Practical Skills</h3>
+            <p>
+              Public reporting has documented learners demonstrating
+              practical technical skills, including a washing-machine
+              project, in connection with Uganda's vocational-skills
+              curriculum initiatives.
+            </p>
+          </article>
+
+          <article class="academic-card">
+            <div class="academic-icon">⚽</div>
+            <h3>Student Activities</h3>
+            <p>
+              The school is registered with the Uganda Secondary Schools
+              Sports Association and participated in girls' football
+              competition in 2024.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================
+         FACILITIES / CONDITIONS
+    ======================================================== -->
+
+    <section id="facilities">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="section-label">Campus information</div>
+          <h2>Facilities and current conditions</h2>
+          <p>
+            Facility information is presented carefully because conditions
+            can change and the most recent independent inspection identified
+            areas requiring attention.
+          </p>
+        </div>
+
+        <div class="conditions-grid">
+
+          <article class="condition-card good">
+
+            <h3>Documented facilities</h3>
+
+            <ul>
+              <li>
+                A 2020/2021-era education profile reported 10 classrooms.
+              </li>
+
+              <li>
+                The same profile reported 2 laboratories.
+              </li>
+
+              <li>
+                The profile reported 10 latrine stances.
+              </li>
+
+              <li>
+                The school has participated in science and innovation
+                activities at regional level.
+              </li>
+            </ul>
+
+          </article>
+
+          <article class="condition-card attention">
+
+            <h3>Infrastructure requiring attention</h3>
+
+            <ul>
+              <li>
+                The Office of the Auditor General's 2025 physical inspection
+                described the girls' dormitories as dilapidated.
+              </li>
+
+              <li>
+                The same audit reported that about 50% of the school
+                structures were on borrowed territory intended for a
+                Catholic university.
+              </li>
+
+              <li>
+                These findings reflect the audit inspection in October 2025
+                and should not be interpreted as a guarantee of the present
+                condition of every building.
+              </li>
+            </ul>
+
+          </article>
+
+        </div>
+
+        <div class="audit-box">
+          <strong>Important:</strong>
+          Infrastructure information on this page is deliberately transparent.
+          The 2025 audit is an independent government record and is included
+          so families can make informed decisions rather than presenting
+          an unrealistically perfect picture of the school.
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================
+         ENROLMENT
+    ======================================================== -->
+
+    <section class="community">
+
+      <div class="container">
+
+        <div class="section-heading center">
+          <div class="section-label">Enrollment &amp; participation</div>
+          <h2>Recent public records</h2>
+          <p>
+            These figures are historical or administrative records and
+            should not be presented as the school's live enrollment today.
+          </p>
+        </div>
+
+        <div class="community-grid">
+
+          <article class="community-card">
+            <h3>574 learners in 2024/25 record</h3>
+            <p>
+              The Office of the Auditor General's 2025 Abim District audit
+              records an EMIS enrolment figure of 574 for Morulem Girls'
+              Senior Secondary School used in the 2024/25 capitation
+              calculation.
+            </p>
+          </article>
+
+          <article class="community-card">
+            <h3>594 UCE candidates in 2024 record</h3>
+            <p>
+              A Uganda Certificate of Education 2024 district results table
+              lists 594 candidates for Morulem Girls' Secondary School.
+              This is a candidate count, not total school enrollment.
+            </p>
+          </article>
+
+          <article class="community-card">
+            <h3>Science innovation participation</h3>
+            <p>
+              Morulem Girls' Secondary School had one project shortlisted
+              for the 2025 Uganda Professional Science Teachers Union
+              Science Innovation Projects regional competition.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================
+         LOCATION
+    ======================================================== -->
+
+    <section class="location-section" id="location">
+
+      <div class="container location-grid">
+
+        <div>
+
+          <div class="section-heading">
+            <div class="section-label">Find the school</div>
+
+            <h2>Morulem, Abim District</h2>
+
+            <p>
+              Morulem Girls' S.S. is located in Morulem, Aremo Parish,
+              Abim District, in Uganda.
+            </p>
+          </div>
+
+          <div class="location-details">
+
+            <div class="location-detail">
+              <span>📍</span>
+              <div>
+                <strong>Locality</strong>
+                Morulem
+              </div>
+            </div>
+
+            <div class="location-detail">
+              <span>🏛</span>
+              <div>
+                <strong>Parish</strong>
+                Aremo Parish
+              </div>
+            </div>
+
+            <div class="location-detail">
+              <span>🗺</span>
+              <div>
+                <strong>District</strong>
+                Abim District
+              </div>
+            </div>
+
+            <div class="location-detail">
+              <span>🇺🇬</span>
+              <div>
+                <strong>Country</strong>
+                Uganda
+              </div>
+            </div>
+
+            <div class="location-detail">
+              <span>✉</span>
+              <div>
+                <strong>Postal address in the 2025 Ministry guide</strong>
+                P.O. Box 18, Kotido
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="map-card">
+
+          <div class="map-inner">
+
+            <div class="map-pin">📍</div>
+
+            <h3>Morulem Girls' S.S.</h3>
+
+            <p>
+              HQQ4+4CC, Morulem, Uganda
+            </p>
+
+            <a
+              class="map-link"
+              href="https://www.google.com/maps/search/?api=1&query=Morulem+Girls+S.S.+HQQ4%2B4CC%2C+Morulem%2C+Uganda"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open in Google Maps →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================
+         CONTACT
+    ======================================================== -->
+
+    <section class="contact-section" id="contact">
+
+      <div class="container">
+
+        <div class="section-heading center">
+          <div class="section-label">Contact information</div>
+          <h2>Get in touch</h2>
+          <p>
+            Public contact information is shown with a verification note
+            where the source is a directory rather than an official school
+            publication.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <article class="contact-card">
+
+            <div class="icon">✉️</div>
+
+            <h3>Postal Address</h3>
+
+            <p>
+              P.O. Box 18<br>
+              Kotido, Uganda
+            </p>
+
+            <p style="margin-top:10px;font-size:0.78rem;">
+              Listed in the Uganda Ministry of Education 2025
+              Post-Primary Selection Information Guide.
+            </p>
+
+          </article>
+
+          <article class="contact-card">
+
+            <div class="icon">📞</div>
+
+            <h3>Publicly Listed Phone</h3>
+
+            <a href="tel:+256782823955">
+              +256 782 823955
+            </a>
+
+            <div class="contact-warning">
+              This number appears in a public business directory.
+              It is not presented here as an officially verified
+              Ministry of Education contact number.
+            </div>
+
+          </article>
+
+          <article class="contact-card">
+
+            <div class="icon">🏫</div>
+
+            <h3>School Identification</h3>
+
+            <p>
+              EMIS: <strong>188000</strong><br>
+              Placement code: <strong>1002</strong><br>
+              Category: Girls / Boarding
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================
+         SOURCES / VERIFICATION
+    ======================================================== -->
+
+    <section class="sources">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="section-label">Research notes</div>
+          <h2>Where the information comes from</h2>
+          <p>
+            This page was assembled from multiple independent records.
+            Where sources disagree or information is outdated, the page
+            avoids presenting the disputed information as current fact.
+          </p>
+        </div>
+
+        <ul class="sources-list">
+
+          <li class="source-item">
+            <strong>Uganda Ministry of Education &amp; Sports</strong>
+            2025 Post-Primary Selection Information Guide:
+            school name, placement code 1002, O &amp; A Level,
+            girls/boarding category and P.O. Box 18, Kotido.
+          </li>
+
+          <li class="source-item">
+            <strong>Office of the Auditor General — Uganda</strong>
+            Abim District Local Government audit for the year ended
+            December 2025: EMIS enrolment used for capitation,
+            school cost centre, staffing information and physical
+            infrastructure observations.
+          </li>
+
+          <li class="source-item">
+            <strong>KAPATU Project</strong>
+            Confirms Morulem Girls' Secondary School as a
+            government-aided school and records EMIS code 188000.
+          </li>
+
+          <li class="source-item">
+            <strong>Diocese of Kotido</strong>
+            Lists Morulem Girls Senior Secondary School among its
+            Catholic schools and associates it with Morulem Parish.
+          </li>
+
+          <li class="source-item">
+            <strong>Uganda Professional Science Teachers Union</strong>
+            Records the school's participation in the 2025 Science
+            Innovation Projects Competition.
+          </li>
+
+          <li class="source-item">
+            <strong>Uganda Secondary Schools Sports Association</strong>
+            Records Morulem Girls Secondary School in the 2024
+            secondary-school sports registration.
+          </li>
+
+          <li class="source-item">
+            <strong>New Vision / Daily Monitor reporting</strong>
+            Public reporting documents the school's participation
+            in practical vocational-skills activities.
+          </li>
+
+          <li class="source-item">
+            <strong>Public education directory records</strong>
+            Older facility and enrollment information is retained only
+            where it is clearly labelled as historical rather than current.
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
+  <footer>
+
+    <div class="container footer-inner">
+
+      <div>
+        <div class="footer-brand">
+          SchoolsUganda
+        </div>
+
+        <div style="font-size:0.78rem;margin-top:3px;">
+          Discover Uganda's schools.
+        </div>
+      </div>
+
+      <div class="footer-note">
+        Morulem Girls' S.S. profile · Information researched from
+        publicly available government, institutional and education records.
+        Always confirm admissions, fees, contacts and current facilities
+        directly with the school before making a decision.
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- =========================================================
+       BACK TO TOP
+  ========================================================== -->
+
+  <button
+    class="back-top"
+    id="backTop"
+    aria-label="Back to top"
+  >
+    ↑
+  </button>
+
+  <!-- =========================================================
+       JAVASCRIPT
+  ========================================================== -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const menuToggle = document.getElementById("menuToggle");
+      const navLinks = document.getElementById("navLinks");
+      const backTop = document.getElementById("backTop");
+
+      /*
+       * Mobile navigation
+       */
+      menuToggle.addEventListener("click", function () {
+        const isOpen = navLinks.classList.toggle("open");
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          isOpen ? "true" : "false"
+        );
+
+        menuToggle.textContent = isOpen ? "✕" : "☰";
+      });
+
+      /*
+       * Close mobile menu after clicking a navigation link.
+       */
+      document.querySelectorAll("#navLinks a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          navLinks.classList.remove("open");
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.textContent = "☰";
+        });
+      });
+
+      /*
+       * Back-to-top button
+       */
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 500) {
+          backTop.classList.add("visible");
+        } else {
+          backTop.classList.remove("visible");
+        }
+      });
+
+      backTop.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+
+      /*
+       * Add a subtle active state to navigation links
+       * based on the section currently visible.
+       */
+      const sections = document.querySelectorAll("main section[id]");
+      const navigationLinks = document.querySelectorAll("#navLinks a");
+
+      const observer = new IntersectionObserver(
+        function (entries) {
+
+          entries.forEach(function (entry) {
+
+            if (!entry.isIntersecting) return;
+
+            navigationLinks.forEach(function (link) {
+              link.style.color = "";
+
+              if (
+                link.getAttribute("href") === "#" + entry.target.id
+              ) {
+                link.style.color = "var(--primary)";
+              }
+            });
+
+          });
+
+        },
+        {
+          rootMargin: "-25% 0px -65% 0px"
+        }
+      );
+
+      sections.forEach(function (section) {
+        observer.observe(section);
+      });
+
+    });
+  </script>
+
+</body>
+</html>
